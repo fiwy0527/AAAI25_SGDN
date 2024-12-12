@@ -48,7 +48,7 @@
 > BGB promotes RGB features to produce clearer textures through YCbCr color space in both frequency and spatial domain, while CEM significantly enhances the visual contrast of the images.*
 
 ## Real-World Well-Aligned Haze Dataset
-**Click here to get the dataset. <a href="https://github.com/fiwy0527/AAAI_25_SDGN/">Dataset</a>** 
+**Click here to get the dataset. Baidu Disk: <a href="https://github.com/fiwy0527/AAAI_25_SDGN/">Dataset</a>** 
 
 > **To enable effective supervised learning, 
 > we collect a real-world haze dataset featuring multiple scenes and varying haze concentrations, 
