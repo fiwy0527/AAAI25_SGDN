@@ -52,7 +52,7 @@
 
 > **To enable effective supervised learning, 
 > we collect a real-world haze dataset featuring multiple scenes and varying haze concentrations, 
-> named the Real-World Well-Aligned Haze (RW$^2$AH) dataset, with a total of 1758 image pairs. 
+> named the Real-World Well-Aligned Haze (RW2AH) dataset, with a total of 1758 image pairs. 
 > The RW$^2$AH dataset primarily records haze/clean images captured by stationary webcams from YouTube, 
 > with scenes including landscapes, vegetation, buildings and mountains.**
 
