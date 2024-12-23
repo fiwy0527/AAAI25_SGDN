@@ -8,8 +8,8 @@
 <a href="https://tyshiwo.github.io/">Ying Tai<sup>2</sup>&nbsp;&nbsp;&nbsp;
 <a href="https://sites.google.com/view/junlineu/">Jun Li</a><sup>1 ✉️</sup>&nbsp;&nbsp;&nbsp;*
 
-> *<sup>1</sup>School of Computer Science and Engineering, Nanjing University of Science and Technology (Nanjing)&nbsp;&nbsp;&nbsp;<br>
-<sup>2</sup>Intelligence science and technology, Nanjing University&nbsp;&nbsp;&nbsp;<br>*
+> *<sup>1</sup>School of Computer Science and Engineering, Nanjing University of Science and Technology (NanJing)&nbsp;&nbsp;&nbsp;<br>
+<sup>2</sup>Intelligence science and technology, Nanjing University (SuZhou)&nbsp;&nbsp;&nbsp;<br>*
 
 
 <em>The Association for the Advancement of Artificial Intelligence <strong>(AAAI)</strong>, February 25 – March 4, 2025 | Philadelphia, Pennsylvania, USA</em>
@@ -48,11 +48,13 @@
 > BGB promotes RGB features to produce clearer textures through YCbCr color space in both frequency and spatial domain, while CEM significantly enhances the visual contrast of the images.*
 
 ## Real-World Well-Aligned Haze Dataset
-**Click here to get the dataset. Baidu Disk: <a href="">Dataset</a>**. Code: **67sx**
+
+**The R2WD dataset can be downloaded from following link**: <a href="https://pan.baidu.com/s/1xZJLBk0OUlor79kqXtM20A?pwd=sgdn">Baidu Drive</a>
+(sgdn) 
 
 > **To enable effective supervised learning, 
 > we collect a real-world haze dataset featuring multiple scenes and varying haze concentrations, 
-> named the Real-World Well-Aligned Haze (RW2AH) dataset, with a total of 1758 image pairs. 
+> named the Real-World Well-Aligned Haze (RW$^2$AH) dataset, with a total of 1758 image pairs. 
 > The RW$^2$AH dataset primarily records haze/clean images captured by stationary webcams from YouTube, 
 > with scenes including landscapes, vegetation, buildings and mountains.**
 
@@ -80,3 +82,38 @@
 
 First, for tool initialization, please refer to [BasicSR](https://github.com/xinntao/BasicSR)
 
+Secondly, please follow these instructions:
+```
+conda create -n py38 python=3.8.16
+conda activate py38
+pip3 install torch torchvision torchaudio
+pip3 install -r requirements.txt  
+```
+
+## Training and Test
+Training our R2WD
+```
+CUDA_VISIBLE_DEVICES=xxxx python basicsr/train.py -opt options/train/SGDN/train_SGDN.yml --auto_resume
+```
+Training our R2WD
+```
+CUDA_VISIBLE_DEVICES=XXX python basicsr/test.py -opt options/test/SGDN/test_SGDN.yml --auto_resume
+```
+
+## 🎓 Citation
+
+If you find the code helpful in your research or work, please cite the following paper(s).
+
+```bibtex
+@inproceedings{fang2025guided,
+  title={Guided Real Image Dehazing using YCbCr Color Space},
+  author={Fang, Wenxuan and Fan, JunKai and Zheng, Yu and Weng, Jiangwei and Tai, Ying and Li, Jun},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  pages={xxxxx--xxxxx},
+  year={2025}
+}
+```
+
+## Contact
+If you have any questions, please contact the email wenxuan_fang@njust.edu.cn
+**Acknowledgment:** This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox. 

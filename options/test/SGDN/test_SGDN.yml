@@ -1,0 +1,45 @@
+name: test_SGDN_R2WD
+suffix: ~  # add suffix to saved images
+model_type: SGDNModel
+scale: 1
+crop_border: ~  # crop border when evaluation. If None, crop the scale pixels
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+
+  test_1:
+      name: R2WDTrainVal
+      type: PairedImageDataset
+      dataroot_gt: /home/File/wenxuan/dataset/R2WD/test/gt
+      dataroot_lq: /home/File/wenxuan/dataset/R2WD/test/input
+      io_backend:
+        type: disk
+
+# network structures
+network_g:
+  type: SGDN
+
+
+save_img: true
+
+# path
+path:
+  pretrain_network_g: /home/File/SGDN/experiments/train_SGDN/models/net_g_latest.pth
+  strict_load_g: true
+
+
+# validation settings
+val:
+  save_img: true
+  suffix: false  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: false
