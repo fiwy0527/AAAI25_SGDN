@@ -80,19 +80,3 @@
 
 First, for tool initialization, please refer to [BasicSR](https://github.com/xinntao/BasicSR)
 
-Secondly, please follow these instructions:
-```
-conda create -n py38 python=3.8.16
-conda activate py38
-pip3 install torch torchvision torchaudio
-pip3 install -r requirements.txt  
-```
-
-## Training and Test
-Organizing! Come Soon...
-
-
-
-## Contact
-If you have any questions, please contact the email wenxuan_fang@njust.edu.cn
-**Acknowledgment:** This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox. 
