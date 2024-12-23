@@ -5,7 +5,7 @@
 <a href="https://fanjunkai1.github.io/">Junkai Fan</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/fiwy0527/AAAI_25_SDGN"> Yu Zheng</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
 <a href="https://wengjiangwei.github.io/">Jiangwei Weng</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
-<a href="https://tyshiwo.github.io/">Ying Tai<sup>2</sup>&nbsp;&nbsp;&nbsp;
+<a href="https://tyshiwo.github.io/">Ying Tai</a><sup>2</sup>&nbsp;&nbsp;&nbsp; 
 <a href="https://sites.google.com/view/junlineu/">Jun Li</a><sup>1 ✉️</sup>&nbsp;&nbsp;&nbsp;*
 
 > *<sup>1</sup>School of Computer Science and Engineering, Nanjing University of Science and Technology (NanJing)&nbsp;&nbsp;&nbsp;<br>
