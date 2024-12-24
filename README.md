@@ -17,7 +17,7 @@
 
 </br>
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://github.com/fiwy0527/AAAI_25_SDGN)
+[![paper](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://arxiv.org/abs/2412.17496)
 [![supplement](https://img.shields.io/badge/Supplementary-Material-B85252)](https://github.com/fiwy0527/AAAI_25_SDGN)
 [![project](https://img.shields.io/badge/Project-Presentation-F9D371)](https://fiwy0527.github.io/projectpage/SGDN/index.html)
 
